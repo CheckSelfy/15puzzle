@@ -1,14 +1,23 @@
 # 15 puzzle
 
-Simple implementation of 15 puzzle in C++ using ncurses.
+Simple implementation of 15 puzzle in C++ using `ncurses`.
 
 Goal is get all numbers rearranged into numerical order from left to right, top to bottom.
 
 ![](assets/example.gif)
 
-## Run
+## Build & Run
+Before installation, ensure that you have installed `ncurses` library
 ```shell
-$ cmake -S . -B build
+$ sudo apt install libncurses5-dev libncursesw5-dev # ubuntu
+    
+$ sudo dnf install ncurses-devel # fedora
+```
+
+```shell
+$ git clone git@github.com:CheckSelfy/15puzzle.git
+$ cmake -S . -B build 
 $ cd build
-$ ./15game
+$ make
+$ ./15game # run the game
 ```
