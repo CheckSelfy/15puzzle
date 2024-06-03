@@ -16,6 +16,7 @@ $ sudo dnf install ncurses-devel # fedora
 
 ```shell
 $ git clone git@github.com:CheckSelfy/15puzzle.git
+$ cd 15puzzle
 $ cmake -S . -B build 
 $ cd build
 $ make
